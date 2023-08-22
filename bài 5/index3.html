@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+  background-color: #F5F5F5;
+  color: #555;
+  font-size: 1.1em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+hr {
+  margin: 50px 0;
+}
+
+.container {
+  margin: 50px auto;
+  max-width: 700px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  background-color: white;
+}
+
+.element {
+  width: 50px;
+  height: 50px;
+  left: 0;
+  background-color: #009966;
+  position: relative;
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.container:hover .element {
+  -webkit-animation-name: wobble;
+  animation-name: wobble;
+}
+
+.element-1 {
+  background-color: #009966;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.element-2 {
+  background-color: purple;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+.element-3 {
+  background-color: orange;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+}
+
+@-webkit-keyframes wobble {
+  0% {
+    left: 0px;
+  }
+  10% {
+    left: 50px;
+  }
+  20% {
+    left: 25px;
+  }
+  30% {
+    left: 100px;
+  }
+  40% {
+    left: 50px;
+  }
+  50% {
+    left: 200px;
+  }
+  60% {
+    left: 100px;
+  }
+  70% {
+    left: 250px;
+  }
+  80% {
+    left: 200px;
+  }
+  90% {
+    left: 300px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes wobble {
+  0% {
+    left: 0px;
+  }
+  10% {
+    left: 50px;
+  }
+  20% {
+    left: 25px;
+  }
+  30% {
+    left: 100px;
+  }
+  40% {
+    left: 50px;
+  }
+  50% {
+    left: 200px;
+  }
+  60% {
+    left: 100px;
+  }
+  70% {
+    left: 250px;
+  }
+  80% {
+    left: 200px;
+  }
+  90% {
+    left: 300px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+</style>
+<body>
+    <div class="container">
+        <p>Hover over the container to see the elements animate over different animation durations.</p>
+        <p>
+          <code>animation-duration: 2s</code>
+        </p>
+        <div class="element element-1"></div>
+        <p>
+          <code>animation-duration: 4s</code>
+        </p>
+        <div class="element element-2"></div>
+        <p>
+          <code>animation-duration: 6s</code>
+        </p>
+        <div class="element element-3"></div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<Style>
+    .parent{
+        height: 100px;
+        width: 100%;
+        background-color: khaki;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+    .child{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        font-size: 30px;
+        font-weight: 800px;
+        color: #8ebf42;
+        font-family: sans-serif;
+        animation-name: marquee;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes marquee {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+</Style>
+<body>
+    <div class="parent">
+        <p class="child">
+            Chúc mừng Sếp tốt nghiệp
+        </p>
+    </div>
+</body>
+</html>
